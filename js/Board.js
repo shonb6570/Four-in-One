@@ -21,28 +21,21 @@ class Board {
     }
 };
 
-// const board=[];
-// const createSpace = () => {
-//         const rowLength = 6; // Main array length
-//         for(let i = 0; i < rowLength.length; i++){
-//             board.push(i);
-//         //   for(let j = 0; j < rowLength(i); j++){
-//         //     board.push(i, j);
-//         //   }
-//         }
-//         return board;
-//         console.log(board);
+// Ashley`s code for comparison
+
+// createSpaces() {
+
+//   const spaces = [];
+
+//   for(let x = 0; x < this.columns; x++){
+//     const column = [];
+
+//     for(let y = 0; y < this.rows; y++){
+//       const space = new Space(i, j);
+//       column.push(space);
+//     }
+//   }
+//   return board;
 // };
-
-const board=[];
-const createSpace = () => {
-        const rowLength = 6; // Main array length
-        for(let i = 0; i < rowLength; i++){
-          console.log("Here " + i);
-        }
-};
-
-console.log("end");
-
 
 
