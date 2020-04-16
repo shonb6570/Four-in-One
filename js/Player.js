@@ -17,7 +17,21 @@ class Player {
             tokens.push(token);
         }
         return tokens;
-    };
+    }
+    /**
+     * Gets all tokens that are 'unused' (dropped property = false)
+     */
+    get unusedTokens () {
+        return this.tokens.filter(token => !token.dropped);
+    }
+    /**
+     * Returns the active token.
+     * @return {object}  first unused token from token array.
+     */
+    get activeToken () {
+        return this.unusedTokens[0];
+    }
 
 }
+
 

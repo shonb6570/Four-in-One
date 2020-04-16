@@ -5,12 +5,14 @@ class Token {
         this.dropped = false;
     }
     get htmlToken()  {
-
+        return document.getElementById(this.id);
     }
 
     drawHTMLToken() {
-        var newDiv = document.createElement("div");
-        const gameBoard = document.getElementById('game-board-underlay').append(newDiv);
-        gameBoard.setAttribute("id", "gameBoard")
+        const token = document.createElement("div");
+        document.getElementById('game-board-underlay').appendChild(token);
+        token.setAttribute("id", this.id);
+        token.setAttribute("class", "token");
+        token.style.backgroundColor = this.owner.color;
     }
 };
